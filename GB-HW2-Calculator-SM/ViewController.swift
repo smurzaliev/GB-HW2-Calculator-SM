@@ -100,6 +100,8 @@ class ViewController: UIViewController {
         
         let expr = NSExpression(format: expression as String)
         if let result = expr.expressionValue(with: nil, context: nil) as? Double {
+            
+            
             calculatorText.text = String(result)
             
         } else {
